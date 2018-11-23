@@ -1,0 +1,109 @@
+{
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #d4af37;
+}
+
+    
+.main {
+    margin-left:120px ;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    { text-align: center;}
+    .main { margin-left: 0;}
+    .sidenav {
+    width: 100%;
+    height: auto;
+    position: fixed;}
+    .sidenav a {float: left;}
+    div.content {margin-left: 0;}
+    .main {margin-left: 0px}
+    #logotop {
+        margin-top: 50px;
+        width: 65%;
+    }
+    #produkt {
+        width: 125px;
+        padding-right: 20px;
+    }
+    .main {
+    display:grid;
+    grid-template-columns: (5fr, 5fr, 5fr);
+    grid-template-areas:  
+        "logotop logotop ."
+        ". . ."
+        "overskrift1 . produkt"
+        "tekst1 . produkt"
+        "tekst1 . ."
+        "tekst1 . ."
+        "nuts nuts nuts"
+        "tekst2 tekst2 tekst2";
+
+}
+
+h2{
+    color: #d4af37;
+    font-family: verdana;
+    font-size: 28px;
+}
+
+p{
+    font-family: verdana;
+    font-size: 18px;
+}
+
+#logotop {
+    grid-area: logotop;
+    
+}
+
+#produkt {
+    grid-area: produkt;
+}
+
+#overskrift1 {
+    grid-area: overskrift1;
+    font-size: 20px;
+
+}
+#tekst1 {
+     grid-area: tekst1;
+     font-size: 15px;
+        
+    }
+#nuts {
+    grid-area: nuts;
+    }
+    
+#tekst2 {
+    grid-area: tekst2;
+    font-size: 15px;
+    }
+
+
